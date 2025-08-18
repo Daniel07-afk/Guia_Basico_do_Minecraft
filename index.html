@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Guia Básico Minecraft</title>
+    <style>
+        /* Estilo inspirado no Minecraft */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive, monospace;
+            background: url("{{ url_for('static', filename='fundo.gif') }}") no-repeat center center fixed;
+            background-size: cover;
+            color: #d1d1d1;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        header {
+            background-color: #3a5d00; /* verde mais claro */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #8b5e00; /* marrom */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #a5d600;
+            text-shadow: 2px 2px 0 #000;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #273d00; /* verde médio */
+            border-radius: 10px;
+            box-shadow: 0 0 15px #000;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #b6f200;
+            text-shadow: 1px 1px 0 #000;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.5em;
+        }
+        img {
+            max-width: 100%;
+            border: 3px solid #8b5e00;
+            border-radius: 6px;
+            margin-top: 10px;
+            display: block;
+            box-shadow: 3px 3px 5px #000;
+        }
+        footer {
+            text-align: center;
+            color: #7f9a00;
+            font-size: 12px;
+            padding: 10px;
+            border-top: 3px solid #8b5e00;
+            margin-top: 40px;
+        }
+        a {
+            color: #a5d600;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guia Básico do Minecraft</h1>
+    </header>
+    <main>
+        <section>
+            <h2>O que é Minecraft?</h2>
+            <p>Minecraft é um jogo sandbox onde você pode construir, explorar e sobreviver em um mundo gerado proceduralmente. Use blocos para criar estruturas, minerar recursos e enfrentar monstros.</p>
+            <img src="{{ url_for('static', filename='mundo.png') }}" alt="Mundo do Minecraft" />
+        </section>
+
+        <section>
+            <h2>Blocos Básicos</h2>
+            <p>O mundo do Minecraft é feito de blocos. Alguns dos blocos mais importantes são:</p>
+            <ul>
+                <li><strong>Grama:</strong> bloco comum na superfície.</li>
+                <li><strong>Pedra:</strong> usada para ferramentas e construções.</li>
+                <li><strong>Madeira:</strong> fundamental para crafting.</li>
+                <li><strong>Minério de ferro:</strong> essencial para criar equipamentos melhores.</li>
+            </ul>
+            <div align="center">
+                <img src="{{ url_for('static', filename='Player_inventory.png') }}" alt="Blocos de Minecraft" />
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>Sobrevivência e Crafting</h2>
+            <p>Comece coletando madeira e pedra para criar ferramentas básicas. Explore cavernas, colete alimentos e construa um abrigo para sobreviver à noite, quando monstros aparecem.</p>
+            <div align="center">
+                <img src="{{ url_for('static', filename='Mesa_de_Bancada.png') }}" alt="Crafting Minecraft" />
+            </div>
+            <div align="center">
+                <img src="{{ url_for('static', filename='itens.png') }}" alt="Itens" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        Guia criado para fins educacionais - Inspirado no tema Minecraft.
+    </footer>
+</body>
+</html>
